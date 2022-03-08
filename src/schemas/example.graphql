@@ -1,0 +1,35 @@
+type Query{
+    "function that i will show in the graphql playground"
+    "in this case my example funtion by Rodas"
+    getExample: [example!]!
+}
+
+type example{
+    "Parameter"
+    DeveloperId: ID!
+    "Parameter"
+    name: String!
+    "Parameter"
+    workplace: String!
+    "Parameter"
+}
+
+input exampleInput{
+    "Parameter"
+    DeveloperId: String
+    "Parameter"
+    name: String
+    "Parameter"
+    workplace: String
+    "Parameter"
+}
+
+type Mutation createExample{
+    "Parameter"
+    input DeveloperId: ID!
+    "Parameter"
+    input name: String!
+    "Parameter"
+    input workplace: String!
+    "Parameter"
+}
